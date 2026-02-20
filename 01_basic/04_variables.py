@@ -71,3 +71,34 @@ print(is_user_logged_in)
 name: str = "midudev" # Indica que la variable es una cadena de texto
 print(name)
 
+# --- Ejemplo básico adicional -------------------------------------------------
+# Pequeño conjunto de ejemplos para practicar asignación, intercambio y f-strings
+print("\n--- Ejemplo básico de variables ---")
+
+# Asignación simple
+a = 10
+b = 3
+print("Valores iniciales -> a:", a, "b:", b)
+
+# Intercambio de valores (Pythonic)
+a, b = b, a
+print(f"Después del intercambio -> a: {a}, b: {b}")
+
+# Uso de f-strings para mezclar texto y variables
+nombre = "Ana"
+edad = 28
+print(f"{nombre} tiene {edad} años")
+
+# Conversión explícita de tipos (ejemplo con cadenas que contienen números)
+numero_str = "5"
+numero = int(numero_str) + 2
+print("Convertido y sumado:", numero)  # imprime 7
+
+# Ejemplo de booleano y tipos
+es_mayor = edad >= 18
+print(f"¿{nombre} es mayor de edad? -> {es_mayor}")
+
+# Nota: si quieres pedir datos al usuario, usa `input()`; queda comentado para no bloquear
+# user_name = input("¿Cómo te llamas? ")
+# print(f"Hola, {user_name}!")
+
